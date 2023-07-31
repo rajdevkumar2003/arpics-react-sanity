@@ -1,0 +1,7 @@
+imp:-
+Login-localstorage to sanity
+home-user fetching
+client-sanity connect
+data-queries related to fetching of datas from sanity
+npm start
+npm run dev
