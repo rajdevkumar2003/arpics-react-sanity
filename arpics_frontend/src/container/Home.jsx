@@ -7,7 +7,8 @@ import { Sidebar, UserProfile } from "../components";
 //import { userQuery } from '../utils/data';
 import { client } from "../client";
 import Pins from "./Pins";
-import logo from "../assets/logo.png";
+//import logo from "../assets/logo.png";
+import arpics from '../assets/arpics.jpg'
 import { userQuery } from "../utils/data";
 
 const Home = () => {
@@ -30,7 +31,7 @@ const Home = () => {
     scrollRef.current.scrollTo(0, 0);
   });
   return (
-    <div className="flex bg-gray-50 md:flex-row flex-col h-screen transaction-height duration-75 ease-out">
+    <div className="flex bg-white md:flex-row flex-col h-screen transaction-height duration-75 ease-out">
       <div className="hidden md:flex h-screen flex initial">
         <Sidebar user={user && user} />
       </div>
@@ -42,7 +43,7 @@ const Home = () => {
             onClick={() => setToggleSidebar(true)}
           />
           <Link to="/">
-            <img src={logo} alt="logo" className="w-28" />
+            <img src={arpics} alt="logo" className="w-20 h-20" />
           </Link>
           <Link to={`user-profile/${user?._id}`}>
             <img

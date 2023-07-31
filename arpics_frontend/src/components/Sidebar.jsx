@@ -2,7 +2,8 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { RiHomeFill } from 'react-icons/ri';
 import { IoIosArrowForward } from 'react-icons/io';
-import logo from '../assets/logo.png';
+//import logo from '../assets/logo.png';
+import arpics from '../assets/arpics.jpg'
 import { categories } from '../utils/data';
 
 const isNotActiveStyle = 'flex items-center px-5 gap-3 text-gray-500 hover:text-black transition-all duration-200 ease-in-out capitalize';
@@ -19,10 +20,11 @@ const Sidebar = ({user,closeToggle}) => {
       <div className='flex flex-col'>
         <Link
           to='/'
-          className='flex px-5 gap-2 my-6 pt-1 w-190 items-center'       
+          className='flex px-5 gap-2 my-6 pt-1 w-190 items-center justify-center flex'       
           onClick={handleCloseSidebar} 
         >
-           <img src={logo} alt='logo' className='w-full' />
+           <img src={arpics} alt='logo' className='w-full h-20' />
+           <h2 className='items-center text-lg font-bold text-xl font-serif'>Arpics</h2>
         </Link>
         <div className='flex flex-col gap-5'>
           <NavLink
@@ -75,7 +77,7 @@ const Sidebar = ({user,closeToggle}) => {
         )
       }
       <div className="text-l font-medium text-gray-900 dark:text-white p-2 ">
-       <h2 ><span className='text-red-600'>SHAREME</span> by RAJEEV SINGH</h2>
+       <h2 className='text-purple-800 font-bold' ><span className='text-red-600'>ARPICS</span> by RAJEEV SINGH</h2>
       </div>
     </div>
   )
